@@ -1,0 +1,204 @@
+/* ======== ESTILO GERAL ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #faf5ee; /* bege clarinho */
+    color: #523119; /* marrom */
+}
+
+/* ======== HEADER ======== */
+header {
+    background: linear-gradient(135deg, #d2bfa3, #c7b49b);
+    text-align: center;
+    padding: 30px 10px;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.paragrafo_top {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* ======== MENU ======== */
+nav.menu {
+    background-color: #e6dccd;
+    padding: 15px 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+}
+
+nav.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+}
+
+nav.menu button {
+    padding: 5px 22px;
+    background-color: #fdfaf6;
+    color: #4b3e35;
+    border: none; /* <-- RETIREI A BORDA */
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav.menu button:hover {
+    background-color: #a0896f;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* ======== TÍTULOS ======== */
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #6d5846;
+    padding: 25px;
+    font-size: 1.8rem;
+}
+
+/* ======== GRID PRODUTOS ======== */
+.grid_produtos_dia {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 1100px;
+    margin: auto;
+    gap: 25px;
+    padding: 15px;
+}
+.grid_produtos{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 1100px;
+    margin: auto;
+    gap: 25px;
+    padding: 15px;
+}
+
+/* ======== CARD PRODUTO ======== */
+.grid_produtos_dia div {
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #e6dccd;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.10);
+}
+
+.grid_produtos div{
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #e6dccd;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.10);
+}
+
+.grid_produtos_dia div:hover {
+    transform: translateY(-5px);
+    border-color: #c7b49b;
+    box-shadow: 0 7px 12px rgba(0,0,0,0.15);
+}
+
+.grid_produtos div:hover{
+    transform: translateY(-5px);
+    border-color: #c7b49b;
+    box-shadow: 0 7px 12px rgba(0,0,0,0.15);
+}
+
+/* ======== IMAGENS ======== */
+.grid_produtos_dia img {
+    width: 80%;              /* <-- REDIMENSIONEI PARA FICAR MAIOR E CENTRAL */
+    height: auto;
+    object-fit: cover;
+    border-radius: 14px;
+    margin: 0 auto 12px auto;  /* <-- CENTRALIZA IMAGENS */
+    display: block;
+}
+
+.grid_produtos img{
+    width: 80%;              /* <-- REDIMENSIONEI PARA FICAR MAIOR E CENTRAL */
+    height: auto;
+    object-fit: cover;
+    border-radius: 14px;
+    margin: 0 auto 12px auto;  /* <-- CENTRALIZA IMAGENS */
+    display: block;
+}
+
+.produto_nome {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #6d5846;
+}
+
+.produto_preco {
+    margin-top: 5px;
+    color: #8b735a;
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+
+/* ======== FOOTER ======== */
+footer {
+    background: #d2bfa3;
+    color: #4b3e35;
+    padding: 25px 10px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.redes img {
+    width: 25px;
+    margin: 0 10px;
+}
+
+
+article {
+    text-align: center;
+}  
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 600px) {
+
+    .grid_produtos img,
+    .grid_produtos_dia img {
+        width: 90%; /* imagens maiores no celular */
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav.menu ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .redes
+    {
+        display: flex;
+        justify-content: flex-end; 
+        gap: 10px; 
+    }
+
+    .redes img {
+        width: 25px;
+        height: auto;
+    }
+}

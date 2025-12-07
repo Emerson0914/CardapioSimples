@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cardápio - Esquina bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> 🍻 ESQUINA BAR 🍻</h1>
+        <p class="paragrafo_top">“Experiências únicas em cada petisco, excelência em cada gole.”</p>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><button class="btn_bebidas" id="btn_bebidas">Bebidas</button></li>
+            <li><button class="btn_comidas" id="btn_comidas">Comidas</button></li>
+            <li><button class="btn_petiscos" id="btn_petiscos">Petiscos</button></li>
+            <li><button class="btn_remov_filtro" id="btn_remov_filtro">Remover Filtro</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="produtos_dia">
+            <h2 class="h2_P_Dia">Cardápio do Dia</h2>
+            <div class="grid_produtos_dia" id="produtos_container_dia">
+            </div>
+        </section>
+
+        <section id="produtos">
+            <h2 class="h2_produto">Cardápio</h2>
+            <div class="grid_produtos" id="produtos_container">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="endereco">
+            <p>📍 Rua dos cachorros doido, 144 - Serra Talhada</p>
+            <p>📞 (87) 94002-8922 </p> 
+        </section>
+
+        <section class="redes"> 
+            <a href="">
+                <img src="Img/whatsapp.png">
+            </a>
+            <a href="">
+                <img src="Img/facebook.png">
+            </a>
+            <a href="">
+                <img src="Img/Instagram.png" class="img1">
+            </a>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
